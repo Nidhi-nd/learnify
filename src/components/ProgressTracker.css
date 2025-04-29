@@ -1,0 +1,24 @@
+.progress-container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  
+  progress {
+    width: 100%;
+    height: 20px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

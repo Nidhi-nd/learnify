@@ -1,0 +1,51 @@
+.featured-courses {
+  padding: 20px;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.featured-courses.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.featured-courses h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.filters {
+  margin-bottom: 15px;
+}
+
+.filter-button {
+  background-color: #e0e7ff;
+  border: none;
+  padding: 8px 15px;
+  margin-right: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #4f46e5;
+  transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+  background-color: #c7d2fe;
+}
+
+.filter-button.active {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}

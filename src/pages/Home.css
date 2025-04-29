@@ -1,0 +1,45 @@
+.home-container {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.home-container.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.btn {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.theme-btn {
+  margin-top: 1rem;
+  background-color: #6c757d;
+}
+
+.theme-btn:hover {
+  background-color: #5a6268;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}

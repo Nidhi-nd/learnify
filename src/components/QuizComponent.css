@@ -1,0 +1,91 @@
+.quiz-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: var(--background-color, #fff);
+  border-radius: 12px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color, #222);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.option {
+  background: var(--option-bg, #f0f4ff);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(79, 70, 229, 0.2);
+}
+
+.option:hover {
+  background-color: var(--option-hover-bg, #d0d7ff);
+  border-color: var(--option-hover-border, #4f46e5);
+}
+
+.option.selected {
+  background-color: var(--option-selected-bg, #4f46e5);
+  color: white;
+  border-color: var(--option-selected-border, #4338ca);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.6);
+}
+
+.next-button-container {
+  margin-top: 25px;
+  text-align: right;
+}
+
+.next-button, .finish-button {
+  background-color: var(--button-bg, #4f46e5);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover, .finish-button:hover {
+  background-color: var(--button-hover-bg, #4338ca);
+}
+
+.finish-container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.finish-container h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.finish-container p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+/* Dark mode variables */
+body.dark, .dark {
+  --background-color: #1e1e2f;
+  --text-color: #e0e0e0;
+  --option-bg: #2a2a3d;
+  --option-hover-bg: #3a3a55;
+  --option-hover-border: #7c7cff;
+  --option-selected-bg: #7c7cff;
+  --option-selected-border: #5a5aff;
+  --button-bg: #7c7cff;
+  --button-hover-bg: #5a5aff;
+}
