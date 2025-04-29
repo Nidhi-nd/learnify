@@ -1,23 +1,32 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Node.js (React app)
+node_modules/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Python/Django
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+db.sqlite3
+venv/
+*.env  # To ignore environment variables file if you use one
 
-# testing
-/coverage
+# MySQL database dumps (if you're storing them in the repo, which you shouldn’t)
+*.sql
 
-# production
-/build
+# WebRTC-related temp files (optional, if any temporary files are generated)
+*.log
 
-# misc
+# IDE-specific files (Visual Studio Code, JetBrains, etc.)
+.vscode/
+.idea/
+
+# OS generated files (macOS/Windows specific)
 .DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+Thumbs.db
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Log files
+*.log
+
+# Temporary files (you can add any specific temp file extensions if needed)
+*.swp
+*.swo
